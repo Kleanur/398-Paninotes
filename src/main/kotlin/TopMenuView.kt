@@ -40,6 +40,10 @@ class TopMenuView(val model: Model, val htmlEditor: HTMLEditor) : Pane(), IView{
         val actionDelete = createAddToMenu(actionMenu,"Delete")
         menuBar.menus.add(actionMenu)
 
+        // Option:
+        val optionMenu = Menu("Option")
+        val optionSearch = createAddToMenu(optionMenu, "Search")
+        menuBar.menus.add(optionMenu)
 
         fileSave.setOnAction {
             print(htmlEditor.htmlText)
@@ -55,11 +59,7 @@ class TopMenuView(val model: Model, val htmlEditor: HTMLEditor) : Pane(), IView{
         fileSave.accelerator = KeyCodeCombination(KeyCode.S, KeyCombination.CONTROL_DOWN)
         fileQuit.accelerator = KeyCodeCombination(KeyCode.Q, KeyCombination.CONTROL_DOWN)
 
-        // Option:
-        val optionMenu = Menu("Option")
-        menuBar.menus.add(optionMenu)
-        optionSearch = MenuItem("Search")
-        optionMenu!!.items.add(optionSearch)
+
         this.children.add(menuBar)
     }
 
