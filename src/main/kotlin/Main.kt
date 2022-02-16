@@ -21,6 +21,7 @@ class Main : Application() {
 
         model.addView(topMenuView)
 
+        println(htmlEditor.htmlText)
         // build the scene graph
         layout.top = topMenuView
         layout.center = htmlEditor

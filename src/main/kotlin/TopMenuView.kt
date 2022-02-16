@@ -58,7 +58,8 @@ class TopMenuView(val model: Model, val htmlEditor: HTMLEditor) : Pane(), IView{
         // Option:
         val optionMenu = Menu("Option")
         menuBar.menus.add(optionMenu)
-
+        optionSearch = MenuItem("Search")
+        optionMenu!!.items.add(optionSearch)
         this.children.add(menuBar)
     }
 
