@@ -5,6 +5,7 @@ import javafx.scene.Scene
 import javafx.scene.layout.BorderPane
 import javafx.scene.web.HTMLEditor
 import javafx.stage.Stage
+import org.jsoup.Jsoup
 
 class Main : Application() {
 
@@ -15,11 +16,13 @@ class Main : Application() {
         // Initialize all widgets--------------------------------------------------------------------------------------------
         val layout = BorderPane()
         val topMenuView = TopMenuView(stage)
-
         val htmlEditor = HTMLEditor()
-        htmlEditor.htmlText = "Hello <a href=\"https://github.com/TestFX/TestFX\">world</a>"
+        htmlEditor.htmlText = "Hello <a href=\"https://github.com/TestFX/TestFX\">world</a><b><u>testing</u></b>"
 
-        println(htmlEditor.htmlText)
+        // text without html tags
+        val noHtmlTags = Jsoup.parse(htmlEditor.htmlText).text()
+
+        println(noHtmlTags)
         // build the scene graph
         layout.top = topMenuView
         layout.center = htmlEditor
