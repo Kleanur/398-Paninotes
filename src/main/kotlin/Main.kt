@@ -19,6 +19,7 @@ class Main : Application() {
         val htmlEditor = HTMLEditor()
         htmlEditor.htmlText = "Hello <a href=\"https://github.com/TestFX/TestFX\">world</a>"
 
+        println(htmlEditor.htmlText)
         // build the scene graph
         layout.top = topMenuView
         layout.center = htmlEditor

@@ -22,6 +22,7 @@ class TopMenuView(stage: Stage) : Pane() {
     var actionMove: MenuItem? = null
     var actionDelete: MenuItem? = null
     var optionMenu: Menu? = null
+    var optionSearch: MenuItem? = null
 
     init {
         this.stage = stage
@@ -60,10 +61,11 @@ class TopMenuView(stage: Stage) : Pane() {
         actionMenu!!.items.add(actionDelete)
         menuBar.menus.add(actionMenu)
 
-        // Option:
+        // Option: Search
         optionMenu = Menu("Option")
         menuBar.menus.add(optionMenu)
-
+        optionSearch = MenuItem("Search")
+        optionMenu!!.items.add(optionSearch)
         this.children.add(menuBar)
     }
 
@@ -72,7 +74,14 @@ class TopMenuView(stage: Stage) : Pane() {
             exitProcess(0)
         }
 
+        optionSearch!!.setOnAction {
+            exitProcess(0)
+        }
+
         // Add a shortcut CTRL+Q for file->quit
         fileQuit!!.accelerator = KeyCodeCombination(KeyCode.Q, KeyCombination.CONTROL_DOWN)
+
+        // Add a shortcut CTRL+F for option->search
+        optionSearch!!.accelerator = KeyCodeCombination(KeyCode.F, KeyCombination.CONTROL_DOWN)
     }
 }
