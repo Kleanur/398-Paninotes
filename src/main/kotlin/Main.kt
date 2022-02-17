@@ -29,7 +29,6 @@ class Main : Application() {
         htmlEditor.htmlText = "Hello <a href=\"https://github.com/TestFX/TestFX\">world</a>"
 
         model.addView(topMenuView)
-<<<<<<< HEAD
         val noHtmlTags = Jsoup.parse(htmlEditor.htmlText).text()
         println(noHtmlTags)
 
@@ -47,7 +46,6 @@ class Main : Application() {
         model.addNotebook(notebook1)
         model.addNotebook(notebook2)
 
->>>>>>> master
         // build the scene graph
         val sidePane = HBox()
         sidePane.children.addAll(sideIconPane, sideNotebookPane)

@@ -43,7 +43,6 @@ class TopMenuView(val model: Model, val htmlEditor: HTMLEditor,val stage: Stage)
         val actionDelete = createAddToMenu(actionMenu,"Delete")
         menuBar.menus.add(actionMenu)
 
-<<<<<<< HEAD
         // Option:
         val optionMenu = Menu("Option")
         val optionSearch = createAddToMenu(optionMenu, "Search")
@@ -57,7 +56,6 @@ class TopMenuView(val model: Model, val htmlEditor: HTMLEditor,val stage: Stage)
             val file: File? = fileDialog.showOpenDialog(stage)
             model.openAndReadHTMLFile(file)
         }
->>>>>>> master
 
         fileSave.setOnAction {
             print(htmlEditor.htmlText)
