@@ -29,8 +29,6 @@ class Main : Application() {
         htmlEditor.htmlText = "Hello <a href=\"https://github.com/TestFX/TestFX\">world</a>"
 
         model.addView(topMenuView)
-        val noHtmlTags = Jsoup.parse(htmlEditor.htmlText).text()
-        println(noHtmlTags)
 
         model.addView(sideNotebookPane)
         model.addView(sideIconPane)

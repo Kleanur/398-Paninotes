@@ -7,6 +7,7 @@ import javafx.scene.layout.Pane
 import javafx.scene.web.HTMLEditor
 import javafx.stage.FileChooser
 import javafx.stage.Stage
+import org.jsoup.Jsoup
 import java.io.File
 import kotlin.system.exitProcess
 
@@ -66,12 +67,27 @@ class TopMenuView(val model: Model, val htmlEditor: HTMLEditor,val stage: Stage)
         fileQuit.setOnAction {
             exitProcess(0)
         }
-
         // Add a shortcut CTRL+Q for file->quit
         fileOpen.accelerator = KeyCodeCombination(KeyCode.O, KeyCombination.CONTROL_DOWN)
         fileSave.accelerator = KeyCodeCombination(KeyCode.S, KeyCombination.CONTROL_DOWN)
         fileQuit.accelerator = KeyCodeCombination(KeyCode.Q, KeyCombination.CONTROL_DOWN)
 
+        optionSearch.setOnAction{
+            val dialog = TextInputDialog("")
+            dialog.title = "Search"
+            dialog.headerText = "Find Word"
+
+            val result = dialog.showAndWait()
+            if (result.isPresent) {
+                // get entered string
+                val entered = result.get()
+                println(entered)
+
+                val noHtmlTags = Jsoup.parse(htmlEditor.htmlText).text()
+                println(noHtmlTags)
+            }
+
+        }
 
         this.children.add(menuBar)
         stage.setOnCloseRequest {
@@ -100,6 +116,7 @@ class TopMenuView(val model: Model, val htmlEditor: HTMLEditor,val stage: Stage)
             }
 
         }
+
     }
 
     private fun createAddToMenu(menu: Menu, menuItemName:String): MenuItem {
