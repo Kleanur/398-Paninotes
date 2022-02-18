@@ -77,14 +77,38 @@ class TopMenuView(val model: Model, val htmlEditor: HTMLEditor,val stage: Stage)
             dialog.title = "Search"
             dialog.headerText = "Find Word"
 
+            dialog.dialogPane.buttonTypes.clear()
+            val searchButton = ButtonType("Search")
+            val cancelButton = ButtonType("Cancel")
+            dialog.dialogPane.buttonTypes.addAll(searchButton,cancelButton)
+
             val result = dialog.showAndWait()
             if (result.isPresent) {
+                // if ()
                 // get entered string
+                println(result.get())
+                println(result)
                 val entered = result.get()
+
+
                 println(entered)
 
                 val noHtmlTags = Jsoup.parse(htmlEditor.htmlText).text()
                 println(noHtmlTags)
+
+                val delim = " "
+                val list = noHtmlTags.split(delim)
+                var wordIndexes = ArrayList<Int>()
+
+                for ((i, item) in list.withIndex()) {
+                    if((item.lowercase()).compareTo(entered.lowercase()) == 0 ) {
+                        wordIndexes.add(i)
+                    }
+                }
+                println(wordIndexes.size)
+                println(wordIndexes)
+                println(list)
+                dialog.headerText = "Found " + wordIndexes.size + "/" + list.size
             }
 
         }
