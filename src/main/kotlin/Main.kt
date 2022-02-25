@@ -1,4 +1,5 @@
 
+import com.goxr3plus.fxborderlessscene.borderless.BorderlessScene
 import javafx.application.Application
 import javafx.geometry.Insets
 import javafx.scene.Scene
@@ -6,6 +7,7 @@ import javafx.scene.layout.BorderPane
 import javafx.scene.layout.HBox
 import javafx.scene.web.HTMLEditor
 import javafx.stage.Stage
+import javafx.stage.StageStyle
 
 class Main : Application() {
 
@@ -39,7 +41,7 @@ class Main : Application() {
         layout.padding = Insets(5.0)
 
         // create and show the scene
-        val scene = Scene(layout)
+        val scene = BorderlessScene(stage, StageStyle.UNDECORATED, layout, 250.0, 250.0)
 
         stage.width = 800.0
         stage.height = 500.0
