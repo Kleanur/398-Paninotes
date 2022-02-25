@@ -2,7 +2,8 @@
 import com.goxr3plus.fxborderlessscene.borderless.BorderlessScene
 import javafx.application.Application
 import javafx.geometry.Insets
-import javafx.scene.Scene
+import javafx.geometry.Pos
+import javafx.scene.control.Label
 import javafx.scene.layout.BorderPane
 import javafx.scene.layout.HBox
 import javafx.scene.web.HTMLEditor
@@ -42,6 +43,12 @@ class Main : Application() {
 
         // create and show the scene
         val scene = BorderlessScene(stage, StageStyle.UNDECORATED, layout, 250.0, 250.0)
+
+        val dragLabel = Label("Drag Me :)")
+        dragLabel.setStyle("-fx-background-color:#303030; -fx-text-fill:white; -fx-font-weight:bold;");
+        dragLabel.setAlignment(Pos.CENTER);
+        layout.bottom = dragLabel
+        scene.setMoveControl(dragLabel)
 
         stage.width = 800.0
         stage.height = 500.0
