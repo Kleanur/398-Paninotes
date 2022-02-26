@@ -1,4 +1,5 @@
 
+import io.github.palexdev.materialfx.controls.MFXButton
 import javafx.scene.control.Button
 import javafx.scene.image.Image
 import javafx.scene.image.ImageView
@@ -39,7 +40,7 @@ class SideNotebookPaneView(val model: Model, val stage: Stage): BorderPane(), IV
                 val notebooks: ArrayList<Notebook> = model.getAllNotebooks()
 
                 for (i in notebooks.indices) {
-                    val notebookButton = Button(notebooks[i].title)
+                    val notebookButton = MFXButton(notebooks[i].title)
                     notebookButton.id = "sideNotebookPane-notebook-button-$i"
                     notebookButton.setPrefSize(110.0, 16.0)
 
@@ -57,7 +58,7 @@ class SideNotebookPaneView(val model: Model, val stage: Stage): BorderPane(), IV
                 plusImageView.isPreserveRatio = true
                 plusImageView.fitHeight = 17.0
 
-                val addNotebookButton = Button("ADD NOTEBOOK", plusImageView)
+                val addNotebookButton = MFXButton("ADD NOTEBOOK", plusImageView)
                 addNotebookButton.id = "sideNotebookPane-add-notebook-button"
 
                 addNotebookButton.setOnAction {
@@ -85,7 +86,7 @@ class SideNotebookPaneView(val model: Model, val stage: Stage): BorderPane(), IV
                         backArrowImageView.isPreserveRatio = true
                         backArrowImageView.fitHeight = 17.0
 
-                        val currentNotebookButton = Button(currentNotebook.title, backArrowImageView)
+                        val currentNotebookButton = MFXButton(currentNotebook.title, backArrowImageView)
                         currentNotebookButton.id = "sideNotebookPane-current-notebook-button"
                         currentNotebookButton.setPrefSize(110.0, 16.0)
                         gridPane.add(currentNotebookButton, 0, 0)
@@ -96,7 +97,7 @@ class SideNotebookPaneView(val model: Model, val stage: Stage): BorderPane(), IV
                         }
 
                         for (i in currentNotebook.notes.indices) {
-                            val noteButton = Button(currentNotebook.notes[i].fileName)
+                            val noteButton = MFXButton(currentNotebook.notes[i].fileName)
                             noteButton.id = "sideNotebookPane-note-button-$i"
                             noteButton.setPrefSize(110.0, 16.0)
                             noteButton.setOnAction {
@@ -112,7 +113,7 @@ class SideNotebookPaneView(val model: Model, val stage: Stage): BorderPane(), IV
                     plusImageView.isPreserveRatio = true
                     plusImageView.fitHeight = 17.0
 
-                    val addNoteButton = Button("ADD NOTE", plusImageView)
+                    val addNoteButton = MFXButton("ADD NOTE", plusImageView)
                     addNoteButton.id = "sideNotebookPane-add-note-button"
 
                     addNoteButton.setOnAction {

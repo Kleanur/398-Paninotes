@@ -1,3 +1,4 @@
+import io.github.palexdev.materialfx.controls.MFXButton
 import javafx.geometry.Insets
 import javafx.scene.control.Alert
 import javafx.scene.control.Button
@@ -9,9 +10,9 @@ import javafx.scene.paint.Color
 
 class SideIconPaneView(val model: Model, val sideNotebookPaneView: SideNotebookPaneView): GridPane(), IView {
 
-    private val notebookButton = Button()
-    private val searchButton = Button()
-    private val infoButton = Button()
+    private val notebookButton = MFXButton()
+    private val searchButton = MFXButton()
+    private val infoButton = MFXButton()
     init {
         this.layoutView()
         this.border = Border(
