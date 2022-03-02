@@ -10,9 +10,9 @@ import javafx.scene.paint.Color
 
 class SideIconPaneView(val model: Model, val sideNotebookPaneView: SideNotebookPaneView): GridPane(), IView {
 
-    private val notebookButton = MFXButton()
-    private val searchButton = MFXButton()
-    private val infoButton = MFXButton()
+    private val notebookButton = MFXButton("")
+    private val searchButton = MFXButton("")
+    private val infoButton = MFXButton("")
     init {
         this.layoutView()
         this.border = Border(
