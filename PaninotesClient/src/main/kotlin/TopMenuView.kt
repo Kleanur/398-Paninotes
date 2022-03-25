@@ -56,10 +56,8 @@ class TopMenuView(val model: Model, val htmlEditor: CustomHTMLEditor, val stage:
 
         // Sort
         val sortMenu = Menu("Sort")
-        val sortNoteA = createAddToMenu(sortMenu, "Sort Notes (A-Z)")
-        val sortNoteZ = createAddToMenu(sortMenu, "Sort Notes (Z-A)")
-        val sortNoteBookA = createAddToMenu(sortMenu, "Sort Notebook (A-Z)")
-        val sortNoteBookZ = createAddToMenu(sortMenu, "Sort Notebook (Z-A)")
+        val sortNotes = createAddToMenu(sortMenu, "Sort Notes (A-Z) <-> (Z-A)")
+        val sortNoteBook = createAddToMenu(sortMenu, "Sort Notebook (A-Z) <-> (Z-A)")
         menuBar.menus.add(sortMenu)
 
         if (Config.darkTheme) optionTheme.text = "Use Light Theme"
@@ -295,27 +293,16 @@ class TopMenuView(val model: Model, val htmlEditor: CustomHTMLEditor, val stage:
 
         }
 
-        sortNoteBookA.setOnAction {
+        sortNoteBook.setOnAction {
             // sort alphabetically
-            model.notebookReversed = false
+            model.notebookReversed = !model.notebookReversed
             model.notifyViews()
         }
 
-        sortNoteBookZ.setOnAction {
-            model.notebookReversed = true
+        sortNotes.setOnAction {
+            model.notesReversed = !model.notesReversed
             model.notifyViews()
         }
-
-        sortNoteA.setOnAction {
-            model.notesReversed = false
-            model.notifyViews()
-        }
-
-        sortNoteZ.setOnAction {
-            model.notesReversed = true
-            model.notifyViews()
-        }
-
         this.children.add(menuBar)
     }
 
