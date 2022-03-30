@@ -1,4 +1,4 @@
-import com.goxr3plus.fxborderlessscene.borderless.BorderlessScene
+import borderless.BorderlessScene
 import fr.brouillard.oss.cssfx.CSSFX
 import javafx.application.Application
 import javafx.scene.layout.BorderPane
@@ -38,9 +38,8 @@ class PaninotesClient : Application() {
         val layout = BorderPane()
 
         // create borderless scene
-        val scene = BorderlessScene(stage, StageStyle.UNDECORATED, layout)
-        scene.removeDefaultCSS()
-        if (!System.getProperty("os.name").contains("Windows")) scene.isSnapEnabled = false
+        val scene = BorderlessScene(stage, layout)
+//        if (!System.getProperty("os.name").contains("Windows")) scene.isSnapEnabled = false
 
         // Initialize all widgets--------------------------------------------------------------------------------------------
         val model = Model(stage)
@@ -83,7 +82,7 @@ class PaninotesClient : Application() {
         stage.height = Config.height
         stage.x = Config.x
         stage.y = Config.y
-        if (Config.isMaximized) scene.maximizeStage()
+        if (Config.isMaximized) scene.maximise()
         if (Config.darkTheme) {
             jMetro.style = Style.DARK
             jMetro.scene.stylesheets.add(DARK_STYLESHEET_URL)
@@ -97,7 +96,7 @@ class PaninotesClient : Application() {
         stage.heightProperty().addListener { _, _, newVal -> Config.height = newVal as Double }
         stage.xProperty().addListener { _, _, newVal -> Config.x = newVal as Double }
         stage.yProperty().addListener { _, _, newVal -> Config.y = newVal as Double }
-        scene.maximizedProperty().addListener { _, _, newVal -> Config.isMaximized = newVal }
+        stage.maximizedProperty().addListener { _, _, newVal -> Config.isMaximized = newVal }
         jMetro.styleProperty().addListener { _, _, newVal -> Config.darkTheme = (newVal == Style.DARK) }
 
         // save config on close

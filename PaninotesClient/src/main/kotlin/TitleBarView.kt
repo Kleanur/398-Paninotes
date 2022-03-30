@@ -1,4 +1,4 @@
-import com.goxr3plus.fxborderlessscene.borderless.BorderlessScene
+import borderless.BorderlessScene
 import javafx.scene.control.Button
 import javafx.scene.control.Label
 import javafx.scene.layout.BorderPane
@@ -39,11 +39,11 @@ class TitleBarView(val scene: BorderlessScene, val stage: Stage, val htmlEditor:
         maximizeButton.styleClass.addAll(JMetroStyleClass.LIGHT_BUTTONS, "icon-button")
         closeButton.styleClass.addAll(JMetroStyleClass.LIGHT_BUTTONS, "close-button")
 
-        minimizeButton.setOnAction { scene.minimizeStage() }
-        maximizeButton.setOnAction { scene.maximizeStage() }
+        minimizeButton.setOnAction { scene.minimise() }
+        maximizeButton.setOnAction { scene.maximise() }
         closeButton.setOnAction { StageUtils.saveOnClose(model, stage, htmlEditor) }
 
-        scene.maximizedProperty().addListener { _, _, newVal ->
+        stage.maximizedProperty().addListener { _, _, newVal ->
             if (newVal) maximizeButton.graphic = restoreIcon
             else maximizeButton.graphic = maximizeIcon
         }
