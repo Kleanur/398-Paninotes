@@ -20,7 +20,7 @@ Built with Kotlin, JavaFx and Spring Boot 2
 ## Documentation
 
 - Final Project Documentation
-    - [Home](Home)
+    - [Home](../../wiki/Home)
     - [Introduction](Introduction)
     - [Tutorial](Tutorial)
     - [Requirements](Requirements)
