@@ -5,9 +5,18 @@
 Installer for Linux:
 [paninotesclient_1.3-RELEASE-1_amd64.deb](https://git.uwaterloo.ca/k348li/398-team-project/-/raw/master/ReleaseJars/paninotesclient_1.3-RELEASE-1_amd64.deb)
 
-For Mac/Windows
+For Mac/Windows:
 
 Client Source Jar:
+
+[PaninotesClient-1.0-SNAPSHOT-all.jar](https://git.uwaterloo.ca/k348li/398-team-project/-/raw/master/ReleaseJars/PaninotesClient-1.0-SNAPSHOT-all.jar)
+
+Server Jar File:
+
+[PaninotesServer-0.0.1-SNAPSHOT.jar](https://git.uwaterloo.ca/k348li/398-team-project/-/raw/master/ReleaseJars/PaninotesServer-0.0.1-SNAPSHOT.jar)
+
+Built with Kotlin, JavaFx and Spring Boot 2
+
 
 ## Documentation
 
