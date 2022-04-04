@@ -5,37 +5,29 @@
 Installer for Linux:
 [paninotesclient_1.3-RELEASE-1_amd64.deb](https://git.uwaterloo.ca/k348li/398-team-project/-/raw/master/ReleaseJars/paninotesclient_1.3-RELEASE-1_amd64.deb)
 
-For Mac/Windows:
+For Mac/Windows
 
 Client Source Jar:
-
-[PaninotesClient-1.0-SNAPSHOT-all.jar](https://git.uwaterloo.ca/k348li/398-team-project/-/raw/master/ReleaseJars/PaninotesClient-1.0-SNAPSHOT-all.jar)
-
-Server Jar File:
-
-[PaninotesServer-0.0.1-SNAPSHOT.jar](https://git.uwaterloo.ca/k348li/398-team-project/-/raw/master/ReleaseJars/PaninotesServer-0.0.1-SNAPSHOT.jar)
-
-Built with Kotlin, JavaFx and Spring Boot 2
 
 ## Documentation
 
 - Final Project Documentation
-    - [Home](Home)
-    - [Introduction](Introduction)
-    - [Tutorial](Tutorial)
-    - [Requirements](Requirements)
-    - [Analysis and Design](Analysis-and-Design)    
-    - [Implementation](Implementation)
-    - [Testing](Testing)
-    - [Sprint 1 Release](Sprint-1-Release)
-    - [Sprint 2 Release](Sprint-2-Release)
-    - [Sprint 3 Release](Sprint-3-Release)
+    - [Home](../../wikis/Home)
+    - [Introduction](../../wikis/Introduction)
+    - [Tutorial](../../wikis/Tutorial)
+    - [Requirements](../../wikis/Requirements)
+    - [Analysis and Design](../../wikis/Analysis-and-Design)    
+    - [Implementation](../../wikis/Implementation)
+    - [Testing](../../wikis/Testing)
+    - [Sprint 1 Release](../../wikis/Sprint-1-Release)
+    - [Sprint 2 Release](../../wikis/Sprint-2-Release)
+    - [Sprint 3 Release](../../wikis/Sprint-3-Release)
     - [Acknowledgement](Acknowledgements/Acknowledgements-and-Licenses)
 
 - Resources
-    - [Design Review #1 Slides](design-review-#1-slides)
-    - [Meeting Minutes: February](meeting-minutes:-february)
-    - [Meeting Minutes: January](meeting-minutes:-january)
-    - [Personas and Interview Prep](personas-and-interview-prep)
-    - [Project Plan](project-plan)
-    - [Stand up](stand-up)
+    - [Design Review #1 Slides](../../wikis/design-review-#1-slides)
+    - [Meeting Minutes: February](../../wikis/meeting-minutes:-february)
+    - [Meeting Minutes: January](../../wikis/meeting-minutes:-january)
+    - [Personas and Interview Prep](../../wikis/personas-and-interview-prep)
+    - [Project Plan](../../wikis/project-plan)
+    - [Stand up](../../wikis/stand-up)
