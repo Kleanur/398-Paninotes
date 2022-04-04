@@ -22,7 +22,7 @@ Client Source Jar:
     - [Sprint 1 Release](../../wikis/Sprint-1-Release)
     - [Sprint 2 Release](../../wikis/Sprint-2-Release)
     - [Sprint 3 Release](../../wikis/Sprint-3-Release)
-    - [Acknowledgement](Acknowledgements/Acknowledgements-and-Licenses)
+    - [Acknowledgement](../../wikis/Acknowledgements/Acknowledgements-and-Licenses)
 
 - Resources
     - [Design Review #1 Slides](../../wikis/design-review-#1-slides)
