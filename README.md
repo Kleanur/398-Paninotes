@@ -34,9 +34,9 @@ Built with Kotlin, JavaFx and Spring Boot 2
     - [Acknowledgement](../../wikis/Acknowledgements/Acknowledgements-and-Licenses)
 
 - Resources
-    - [Design Review #1 Slides](../../wikis/design-review-#1-slides)
-    - [Meeting Minutes: February](../../wikis/meeting-minutes:-february)
-    - [Meeting Minutes: January](../../wikis/meeting-minutes:-january)
+    - [Design Review #1 Slides](../../wikis/design-review-1)
+    - [Meeting Minutes: February](../../wikis/meeting-minutes-for-february)
+    - [Meeting Minutes: January](../../wikis/meeting-minutes-for-january)
     - [Personas and Interview Prep](../../wikis/personas-and-interview-prep)
     - [Project Plan](../../wikis/project-plan)
     - [Stand up](../../wikis/stand-up)
