@@ -38,5 +38,4 @@ Built with Kotlin, JavaFx and Spring Boot 2
     - [Meeting Minutes: February](../../wikis/meeting-minutes-for-february)
     - [Meeting Minutes: January](../../wikis/meeting-minutes-for-january)
     - [Personas and Interview Prep](../../wikis/personas-and-interview-prep)
-    - [Project Plan](../../wikis/project-plan)
     - [Stand up](../../wikis/stand-up)
