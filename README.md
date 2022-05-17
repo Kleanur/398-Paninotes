@@ -1,6 +1,15 @@
-# Paninotes
+# Paninotes: 
+
+A desktop note-taking application for Windows, Mac, and Linux. Our name is inspired by the iconic Waterloo restaurant Mr. Paninos Beijing House.
+
+![image](https://user-images.githubusercontent.com/34748712/168768768-db25cdfc-fe01-431f-8bfa-f12d2b66bfda.png)
+
 
 ## Team 203 - The InNoteVators
+- Cotapher Xie
+- Gillian Xu
+- Kelly Jia
+- Kevin Li
 
 Installer for Linux:
 [paninotesclient_1.3-RELEASE-1_amd64.deb](https://git.uwaterloo.ca/k348li/398-team-project/-/raw/master/ReleaseJars/paninotesclient_1.3-RELEASE-1_amd64.deb)
@@ -16,26 +25,3 @@ Server Jar File:
 [PaninotesServer-0.0.1-SNAPSHOT.jar](https://git.uwaterloo.ca/k348li/398-team-project/-/raw/master/ReleaseJars/PaninotesServer-0.0.1-SNAPSHOT.jar)
 
 Built with Kotlin, JavaFx and Spring Boot 2
-
-
-## Documentation
-
-- Final Project Documentation
-    - [Home](../../wikis/Home)
-    - [Introduction](../../wikis/Introduction)
-    - [Tutorial](../../wikis/Tutorial)
-    - [Requirements](../../wikis/Requirements)
-    - [Analysis and Design](../../wikis/Analysis-and-Design)    
-    - [Implementation](../../wikis/Implementation)
-    - [Testing](../../wikis/Testing)
-    - [Sprint 1 Release](../../wikis/Sprint-1-Release)
-    - [Sprint 2 Release](../../wikis/Sprint-2-Release)
-    - [Sprint 3 Release](../../wikis/Sprint-3-Release)
-    - [Acknowledgement](../../wikis/Acknowledgements/Acknowledgements-and-Licenses)
-
-- Resources
-    - [Design Review #1 Slides](../../wikis/design-review-1)
-    - [Meeting Minutes: February](../../wikis/meeting-minutes-for-february)
-    - [Meeting Minutes: January](../../wikis/meeting-minutes-for-january)
-    - [Personas and Interview Prep](../../wikis/personas-and-interview-prep)
-    - [Stand up](../../wikis/stand-up)
